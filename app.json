@@ -1,0 +1,70 @@
+{
+    "name": "- سيلفا الاك ميوزك",
+    "description": "-⿻↬──────@SO_SELVA للمعرفة تحديثات تابعوا قناتنا معرف قناتنا",
+    "logo": "https://telegra.ph/file/75c6ec6f13bd3829d7939.jpg",
+    "keywords": [
+        "Telegram",
+        "MusicPlayer",
+        "sython",
+        "VideoPlayer"
+    ],
+    "repository": "https://github.com/Mrlido99/SelvaMusic",
+    "env": {
+        "SESSION": {
+            "description": "هنا ضع كود البايروجرام",
+            "required": true
+        },
+        "API_ID": {
+            "description": "هنا ضع الايبي ايدي",
+            "required": true
+        },
+        "PING_PIC": {
+            "description": "لا تغيـرها ابدا. ",
+            "required": false,
+            "value": "https://telegra.ph/file/75c6ec6f13bd3829d7939.jpg"
+        },
+        "THUMB_PIC": {
+            "description": "لا تغيـرها ابدا. ",
+            "required": false,
+            "value": "https://telegra.ph/file/75c6ec6f13bd3829d7939.jpg"
+        },
+        "HNDLR": {
+            "description": "العلامه التي تضعها قبل اسم الامر مثل ( $ • -) تستطيع تغييرها ",
+            "required": false,
+            "value": "."
+        },
+        "API_HASH": {
+            "description": "هنا ضع الايبي هاش",
+            "required": true
+        },
+        "OWNER": {
+            "description": "معرف حساب المالك بدون علامه @ مثال : J0KER7x ",
+            "required": true            
+            },
+        "OWNER_NAME": {
+            "description": "ضع هنا اسم حساب  (حسابك الاساسي) ",
+            "required": true
+            },
+        "SUDO_USERS": {
+            "description": "هنا ضع ايدي حسابك كمطور للبوت ",
+            "required": true
+
+        }        
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
